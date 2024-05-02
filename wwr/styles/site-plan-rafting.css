@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap');
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
-    --primary-color: #397367
-    --secondary-color: #63ccca
-    --accent1-color: #5da399
-    --accent2-color: #42858c
+    --primary-color: #397367;
+    --secondary-color: #63ccca;
+    --accent1-color: #5da399;
+    --accent2-color: #42858c;
 
-    --heading-font: 'Roboto', serif
-    --paragraph-font: 'Open Sans', serif
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Open Sans', serif;
 
     --nav-background-color: #396e94;
     --nav-link-color: #ffffff;
@@ -34,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     padding: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--accent1-color);
 }
 
 p {
