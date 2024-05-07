@@ -1,3 +1,36 @@
+/* Adding Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+    color: #000;
+}
+
+main img {
+    float: right;
+}
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 10x;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 0;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -48,6 +81,7 @@ main img {
 p {
     padding: 0;
 }
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
