@@ -13,10 +13,12 @@
     background-color: #ddd;
     color: #000;
 }
-
+/* Additional styles */
 main img {
     float: right;
 }
+
+/* Positioning */
 aside {
     position: relative;
 }
