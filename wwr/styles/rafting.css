@@ -19,20 +19,30 @@ header {
     background-color: var(--primary-color);
     padding: 10px;
     text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
-header img {
-    width: 100px;
+header nav {
+    margin-top: 10px; /* Adjust top margin as needed */
 }
 
 nav {
-    margin-top: 10px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px; /* Adjust margin as needed */
+}
+
+header img {
+    width: 150px;
+    margin-right: 10%;
 }
 
 main {
@@ -51,22 +61,42 @@ main {
     height: auto;
 }
 
-.hero h1,
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    z-index: 1; /* Set a higher z-index value */
+}
+
 .hero article {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     color: white;
     text-align: center;
-    width: 70%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    max-width: 80%;
 }
 
 .hero article img {
     float: right;
     margin-left: 20px;
+    max-width: 30%;
+}
+
+h2 {
+    text-align: center;
+    color: #555; /* Set color for h2 */
+    font-size: 1.5rem; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    margin-bottom: 8px
 }
 
 section {
@@ -74,18 +104,17 @@ section {
 }
 
 footer {
+    position: relative; /* Ensure the footer is a positioned element */
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-footer p {
-    margin: 0;
-}
-
 .sociallinks {
-    margin-top: 10px;
+    position: absolute;
+    bottom: 30px; 
+    right: 20px; 
 }
 
 .sociallinks a {
@@ -94,5 +123,5 @@ footer p {
 
 .sociallinks img {
     width: 30px;
-    margin: 0 5px;
+    margin: 0 5px; 
 }
