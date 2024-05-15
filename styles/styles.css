@@ -7,6 +7,7 @@
 
 /* Class Selectors */
 .box {
+    position: relative;
     margin: 1rem;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -25,28 +26,48 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 300px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     margin: 0;
 }
 
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 nav a{
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
+
 h1 {
     color: steelblue;
 }
+main h1 {
+    font-weight: bolder;
+    border-bottom: 2px solid steelblue; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+
 img {
-    width: 150px;
+    width: 100px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
@@ -77,7 +98,7 @@ aside img{
 }
 
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 p {
@@ -89,3 +110,41 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    align-items: center;
+  }
+  
+  main {
+    grid-column: 2/3;
+    margin: 1rem;
+  }
+  
+  aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .box img {
+    height: 500px;
+    display: block;
+}
+
+.box h2 {
+    position: absolute; 
+    top: 22%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    padding: 0; 
+    color: black;
+    font-size: 28px;
+    font-weight: bolder;
