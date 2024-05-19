@@ -1,4 +1,4 @@
-/* Impport Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
@@ -26,23 +26,24 @@ header {
 
 header img {
     width: 150px;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 header nav {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 nav {
     display: flex; 
-    justify-content: center; 
-    align-items: center; 
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 40px; 
+    margin: 0 ; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 5px 40px; 
 }
 
 main {
@@ -96,7 +97,32 @@ h2 {
     color: #555; 
     font-size: 1.5rem; 
     font-weight: bold; 
-    margin-bottom: 8px
+    margin-bottom: 8px;
+}
+
+.history {
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    align-items: center; 
+}
+
+.history-image {
+    grid-column: 2; 
+    text-align: center; 
+}
+
+.history-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.history-text p {
+    text-align: justify;
 }
 
 section {
@@ -109,21 +135,43 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    flex-grow: 1; 
+    text-align: center; 
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
 }
 
 .sociallinks {
-    position: absolute;
-    bottom: 30px; 
-    right: 20px; 
+    display: flex;
+    align-items: center; 
 }
 
 .sociallinks a {
+    display: flex;
     text-decoration: none;
+    margin: 0; 
 }
 
 .sociallinks img {
-    width: 30px;
-    margin: 0 5px; 
+    width: 40px;
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+footer nav a {
+    border: none; 
 }
 
 .adventures {
@@ -132,31 +180,31 @@ footer {
 
 .adventures h2 {
     text-align: center;
-    color: #555; 
-    font-size: 1.5rem; 
-    font-weight: bold; 
-    margin-bottom: 10px; /* Ensure some space between h2 and images */
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .images-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto; 
+    padding: 10px 0; 
 }
 
 .images-container figure {
-    margin-right: 20px; /* Adjust margin as needed */
+    margin: 0;
     text-align: center;
 }
 
-.images-container figure:last-child {
-    margin-right: 0; /* Remove margin from the last figure */
-}
-
 .images-container img {
-    width: 200px; /* Set width to ensure all images are the same size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add some space between images */
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .images-container figcaption {
@@ -164,9 +212,10 @@ footer {
 }
 
 .images-container img[alt="Rafting Image 5"] {
-    height: 135px; /* Adjust the height as needed */
+    height: 135px;
 }
 
 .images-container img[alt="Rafting Image 2"] {
-    height: 135px; /* Adjust the height as needed */
+    height: 135px;
 }
+
