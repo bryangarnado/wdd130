@@ -26,7 +26,7 @@ header {
 
 header img {
     width: 150px;
-    margin-right: 10%;
+    margin-right: 20%;
 }
 
 header nav {
@@ -41,9 +41,9 @@ nav a {
     color: black;
     text-decoration: none;
     margin: 0 ; 
-    border: 2px solid white; 
-    border-radius: 10px; 
-    padding: 5px 40px; 
+    border: 2px solid whitesmoke; 
+    border-radius: 0; 
+    padding: 5px 30px; 
 }
 
 main {
@@ -109,7 +109,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 20px; 
     align-items: center; 
-    background-color: lightgray; /* Change this to your desired background color */
+    background-color: lightgray; 
     padding: 20px; 
 }
 
@@ -150,7 +150,7 @@ footer {
     padding: 0;
 }
 
-.sociallinks {
+.social-links {
     display: flex;
     align-items: center; 
 }
@@ -161,12 +161,12 @@ footer {
     margin: 0; 
 }
 
-.sociallinks img {
+.social-links img {
     width: 40px;
     margin: 0;
 }
 
-.sociallinks {
+.social-links {
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -221,3 +221,88 @@ footer nav a {
     height: 135px;
 }
 
+
+.team {
+    text-align: center;
+}
+
+.team-profiles {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-profiles figure {
+    text-align: center;
+    margin: 0;
+}
+
+.team-profiles img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-profiles figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input,
+.contact-form fieldset,
+.contact-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px; 
+}
+
+
+.contact-form button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: navy;
+}
+
+.team {
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    color: #333; 
+}
