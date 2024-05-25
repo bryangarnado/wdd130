@@ -306,3 +306,9 @@ footer nav a {
     padding: 20px; 
     color: #333; 
 }
+
+.google-map {
+    width: 550px;
+    height: 560px; 
+    border: none;
+}
