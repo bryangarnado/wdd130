@@ -312,3 +312,64 @@ footer nav a {
     height: 560px; 
     border: none;
 }
+
+
+/* Basic styling for the CTA button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Style each trip section */
+  .trip {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .trip img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 40%;
+    margin-right: 20px;
+  }
+  
+  .trip h2, .trip p {
+    flex: 1 1 50%;
+  }
+  
+  /* Style for the table */
+  .trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .trips-table th, .trips-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .trips-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .trip {
+      flex-direction: column;
+    }
+  
+    .trip img, .trip h2, .trip p {
+      flex: 1 1 100%;
+      margin: 0;
+    }
+  }
+  
